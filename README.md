@@ -1,20 +1,14 @@
-# Epeius
-English | [简体中文](./README-zh_CN.md) | [日本語](./README-ja_JP.md)
 
-Deploy Trojan using a Serverless approach
 
-## Quick start
-- Create a new Worker in Cloudflare Workers dashboard. 
-- Paste code from [worker.js](./src/worker.js) into the worker code editor. 
-- Replace `sha224Password` with your own password. You can generate [here](https://www.atatus.com/tools/sha224-to-hash). Alternatively, you can add the `SHA224PASS` environment variable in Cloudflare Workers settings later.
-- Binding a custom domain to the worker.
-- Visit `https://[YOUR_DOMAIN]/link` and replace `ca110us` with your plain password.
+以 Serverless 的方式部署 Trojan
 
-## Not supported
-- UDP 🙅 (Cloudflare workers runtime does not support UDP yet)
-
-## Disclaimer
-This project is for study/research purposes only. Users are responsible for legal compliance and ethical conduct. The author disclaims all liability for misuse.
-
-## Reference
-[zizifn/edgetunnel](https://github.com/zizifn/edgetunnel)
+快速上手
+在 Cloudflare Workers 仪表盘中创建一个新的 Worker
+将 worker.js 文件中的代码粘贴到 Worker 代码编辑器中
+用你自己的密码替换 sha224Password，你可以在 这里 生成密码。或者，你可以之后在 Cloudflare Workers 设置中增加 SHA224PASS 环境变量
+将自定义域名绑定到 Worker
+访问 https://[你的域名]/link 并用你的明文密码替换 ca110us
+未支持事项
+Cloudflare workers runtime 当前不支持 UDP
+免责声明
+该项目仅供学习/研究目的，用户对法律合规和道德行为负责，作者对任何滥用行为概不负责。
