@@ -1,4 +1,4 @@
-name = "epeius"
+name = "srvin"
 main = "src/worker.js"
-compatibility_date = "2024-05-03"
+compatibility_date = "2024-09-09"
 workers_dev = true
